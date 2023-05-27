@@ -8,7 +8,7 @@ export const barberData = [
     name: 'cool barber',
     town: 'Douala',
     Quater: 'Bonamoussadi',
-    locationDetails: 'complexe mahima boutique p44'
+    locationDetails: 'complexe mahima boutique P-44'
   },
   {
     id: 0o2,
@@ -24,6 +24,6 @@ export const barberData = [
     name: 'afro barber',
     town: 'Douala',
     Quater: 'Bonamoussadi',
-    locationDetails: 'complexe mahima boutique z75'
+    locationDetails: 'complexe mahima boutique Z-75'
   },
 ]

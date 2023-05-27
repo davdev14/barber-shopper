@@ -1,4 +1,6 @@
 import React, { ReactNode } from 'react'
+import classes from './Card.module.css'
+
 
 type componentProps = {
   children: ReactNode,
@@ -6,7 +8,7 @@ type componentProps = {
 
 const card = ({children}: componentProps) => {
   return (
-    <div className='bg-slate-900'>
+    <div className={classes.card}>
       {children}
     </div>
   )
