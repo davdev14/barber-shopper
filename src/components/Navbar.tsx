@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import Image from 'next/image'
-import logo from '../assets/icons/logo.svg'
-import menuIcon from '../assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg'
+import logo from '../../assets/icons/logo.svg'
+import menuIcon from '../../assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg'
 import Backdrop from '@/ui/Backdrop'
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='md:flex md:items-center md:justify-between md:px-12 md:py-4 w-full fixed top-0 left-0 flex items-center justify-between px-4 py-3'>
+    <div className='md:flex md:items-center md:justify-between md:px-12 md:py-4 w-full fixed top-0 left-0 flex items-center justify-between px-2 py-3'>
       <Image
         src={menuIcon}
         alt="barber shopper logo"
