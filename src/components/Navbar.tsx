@@ -20,7 +20,7 @@ const Navbar = () => {
         alt="barber shopper logo"
         width={35}
         className='cursor-pointer md:hidden'
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen(prev => !prev)}
       />
       <Image
         src={logo}
