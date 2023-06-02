@@ -26,4 +26,52 @@ export const barberData = [
     Quater: 'Bonamoussadi',
     locationDetails: 'complexe mahima boutique Z-75'
   },
+  {
+    id: 0o1,
+    image: barber1,
+    name: 'cool barber',
+    town: 'Douala',
+    Quater: 'Bonamoussadi',
+    locationDetails: 'complexe mahima boutique P-44'
+  },
+  {
+    id: 0o2,
+    image: barber1,
+    name: 'zen barber',
+    town: 'Yaounde',
+    Quater: 'Mendong',
+    locationDetails: 'en face de doov mendong'
+  },
+  {
+    id: 0o3,
+    image: barber1,
+    name: 'afro barber',
+    town: 'Douala',
+    Quater: 'Bonamoussadi',
+    locationDetails: 'complexe mahima boutique Z-75'
+  },
+  {
+    id: 0o1,
+    image: barber1,
+    name: 'cool barber',
+    town: 'Douala',
+    Quater: 'Bonamoussadi',
+    locationDetails: 'complexe mahima boutique P-44'
+  },
+  {
+    id: 0o2,
+    image: barber1,
+    name: 'zen barber',
+    town: 'Yaounde',
+    Quater: 'Mendong',
+    locationDetails: 'en face de doov mendong'
+  },
+  {
+    id: 0o3,
+    image: barber1,
+    name: 'afro barber',
+    town: 'Douala',
+    Quater: 'Bonamoussadi',
+    locationDetails: 'complexe mahima boutique Z-75'
+  },
 ]
