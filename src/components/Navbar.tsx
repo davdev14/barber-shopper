@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='md:flex md:items-center md:justify-between md:px-12 md:py-4 w-full fixed top-0 left-0 flex items-center justify-between px-2 py-3'>
+    <div className='md:flex md:items-center md:justify-between md:px-12 md:py-4 w-full fixed top-0 left-0 flex items-center justify-between px-2 py-3 bg-white'>
       <Image
         src={menuIcon}
         alt="barber shopper logo"
@@ -28,7 +28,7 @@ const Navbar = () => {
         width={100}
       />
       <div className='md:flex md:items-center'>
-      <ul className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-[-1] left-0 w-3/5 md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${isOpen ? 'left-0 opacity-100 pt-16' : 'left-[-490px]'} md:opacity-100 opacity-0 bg-white`}>
+      <ul className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-[-1] left-0 w-3/5 md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${isOpen ? 'left-0 opacity-100 pt-16' : 'left-[-490px]'} md:opacity-100 opacity-0`}>
       {
         links.map((link) => (
           <li key={link.name} className='cursor-pointer md:ml-8 text-xl md:my-0 my-7'>

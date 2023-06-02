@@ -1,21 +1,15 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
+import { barberData } from "../data/data"
 import Card from '@/ui/Card'
-import Image, { StaticImageData } from 'next/image'
-import { barberData } from '@/data/data'
+import Image from 'next/image'
+import { barberDataType } from "../components/BarberCards"
 
-export interface barberDataType {
-    image: StaticImageData;
-    name: string;
-    town: string;
-    Quater: string;
-    locationDetails: string;
-    id: number
-}
-
-const BarberCard = () => {
-  return(
-    <div className='flex gap-5 m-3'>
-    {barberData.map((barber: barberDataType) => (
+const MostRatedBarbers = () => {
+  return (
+    <div className='mx-12 mb-20'>
+      <h2 className='text-3xl font-semibold my-6'>Most Rated Barbers</h2>
+      <div className='flex gap-8'>
+      {barberData.map((barber: barberDataType) => (
       <Card key={barber.id}>
         <div className='flex flex-col items-center justify-center flex-wrap'>
         <Image
@@ -33,9 +27,9 @@ const BarberCard = () => {
       </Card>
     ))
 }
+      </div>
     </div>
   )
-
 }
 
-export default BarberCard
+export default MostRatedBarbers

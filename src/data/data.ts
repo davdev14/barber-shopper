@@ -1,4 +1,4 @@
-import barber1 from '../assets/images/barber1.jpg'
+import barber1 from '../../assets/images/barber1.jpg'
 
 
 export const barberData = [
