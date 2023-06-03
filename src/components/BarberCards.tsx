@@ -15,7 +15,8 @@ export interface barberDataType {
 const BarberCard = () => {
   return(
     <div className='flex gap-5 m-3'>
-    {barberData.map((barber: barberDataType) => (
+    {
+    barberData.map((barber: barberDataType) => (
       <Card key={barber.id}>
         <div className='flex flex-col items-center justify-center flex-wrap'>
         <Image
