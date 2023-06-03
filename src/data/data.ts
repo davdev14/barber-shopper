@@ -3,7 +3,7 @@ import barber1 from '../../assets/images/barber1.jpg'
 
 export const barberData = [
   {
-    id: 0o1,
+    id: 1,
     image: barber1,
     name: 'cool barber',
     town: 'Douala',
@@ -11,7 +11,7 @@ export const barberData = [
     locationDetails: 'complexe mahima boutique P-44'
   },
   {
-    id: 0o2,
+    id: 2,
     image: barber1,
     name: 'zen barber',
     town: 'Yaounde',
@@ -19,7 +19,7 @@ export const barberData = [
     locationDetails: 'en face de doov mendong'
   },
   {
-    id: 0o3,
+    id: 3,
     image: barber1,
     name: 'afro barber',
     town: 'Douala',
@@ -27,7 +27,7 @@ export const barberData = [
     locationDetails: 'complexe mahima boutique Z-75'
   },
   {
-    id: 0o1,
+    id: 4,
     image: barber1,
     name: 'cool barber',
     town: 'Douala',
@@ -35,7 +35,7 @@ export const barberData = [
     locationDetails: 'complexe mahima boutique P-44'
   },
   {
-    id: 0o2,
+    id: 5,
     image: barber1,
     name: 'zen barber',
     town: 'Yaounde',
@@ -43,7 +43,7 @@ export const barberData = [
     locationDetails: 'en face de doov mendong'
   },
   {
-    id: 0o3,
+    id: 6,
     image: barber1,
     name: 'afro barber',
     town: 'Douala',
@@ -51,7 +51,7 @@ export const barberData = [
     locationDetails: 'complexe mahima boutique Z-75'
   },
   {
-    id: 0o1,
+    id: 7,
     image: barber1,
     name: 'cool barber',
     town: 'Douala',
@@ -59,7 +59,7 @@ export const barberData = [
     locationDetails: 'complexe mahima boutique P-44'
   },
   {
-    id: 0o2,
+    id: 8,
     image: barber1,
     name: 'zen barber',
     town: 'Yaounde',
@@ -67,7 +67,7 @@ export const barberData = [
     locationDetails: 'en face de doov mendong'
   },
   {
-    id: 0o3,
+    id: 9,
     image: barber1,
     name: 'afro barber',
     town: 'Douala',

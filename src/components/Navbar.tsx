@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import Image from 'next/image'
-import logo from '../../assets/icons/logo.svg'
+import logo from '../../assets/icons/Barber-Shopper.svg'
 import menuIcon from '../../assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg'
 import Backdrop from '@/ui/Backdrop'
 
@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='md:flex md:items-center md:justify-between md:px-12 md:py-4 w-full fixed top-0 left-0 flex items-center justify-between px-2 py-3 bg-white'>
+    <div className='md:flex md:items-center md:justify-between md:px-12 md:py-4 w-full fixed top-0 left-0 flex items-center justify-between px-2 py-3 bg-white z-50'>
       <Image
         src={menuIcon}
         alt="barber shopper logo"
@@ -25,7 +25,7 @@ const Navbar = () => {
       <Image
         src={logo}
         alt="barber shopper logo"
-        width={100}
+        width={50}
       />
       <div className='md:flex md:items-center'>
       <ul className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-[-1] left-0 w-3/5 md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${isOpen ? 'left-0 opacity-100 pt-16' : 'left-[-490px]'} md:opacity-100 opacity-0`}>
