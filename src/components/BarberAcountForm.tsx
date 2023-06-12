@@ -11,18 +11,18 @@ const BarberAcountForm = () => {
   const townInputRef = useRef<HTMLInputElement>(null);
 
   const formIsInvalid = !formIsValid && inputTouched 
-
-  const barberInfos = {
-    fullname:fullnameInputRef.current?.value,
-    email:emailInputRef.current?.value,
-    username:usernameInputRef.current?.value,
-    yearsOfExp:yearsOfExpInputRef.current?.value,
-    town:townInputRef.current?.value,
-  }
-
+  
+  
   const formSubmissionHandler = (event: FormEvent) => {
     event.preventDefault()
     setInputTouched(true)
+    const barberInfos = {
+      fullname:fullnameInputRef.current?.value as string,
+      email:emailInputRef.current?.value as string,
+      username:usernameInputRef.current?.value as string,
+      yearsOfExp:yearsOfExpInputRef.current?.value as string,
+      town:townInputRef.current?.value as string,
+    }
 
     if(barberInfos.fullname?.trim() == '' || undefined) {
       return formIsInvalid
