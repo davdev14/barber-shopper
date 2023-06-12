@@ -12,17 +12,18 @@ const BarberAcountForm = () => {
 
   const formIsInvalid = !formIsValid && inputTouched 
 
+  const barberInfos = {
+    fullname:fullnameInputRef.current?.value,
+    email:emailInputRef.current?.value,
+    username:usernameInputRef.current?.value,
+    yearsOfExp:yearsOfExpInputRef.current?.value,
+    town:townInputRef.current?.value,
+  }
+
   const formSubmissionHandler = (event: FormEvent) => {
     event.preventDefault()
     setInputTouched(true)
-    const barberInfos = {
-      fullname:fullnameInputRef.current?.value,
-      email:emailInputRef.current?.value,
-      username:usernameInputRef.current?.value,
-      yearsOfExp:yearsOfExpInputRef.current?.value,
-      town:townInputRef.current?.value,
-    }
-    
+
     if(barberInfos.fullname?.trim() == '' || undefined) {
       return formIsInvalid
     }
@@ -41,13 +42,14 @@ const BarberAcountForm = () => {
     setFormIsValid(true)
     console.log(barberInfos);
   }
+  
   return (
     <div>
       { formIsInvalid && <p className='text-red-600'>please fill the form correctly</p>}
       <form onSubmit={formSubmissionHandler}>
         <div className='my-3'>
           <label htmlFor="full-name">Full name:</label>
-          <input ref={fullnameInputRef} type="text" id='full-name' className='border-2 border-black'/>
+          <input ref={fullnameInputRef} type="text" id='full-name' className='border-2 border-black' />
         </div>
 
         <div className='my-3'>
