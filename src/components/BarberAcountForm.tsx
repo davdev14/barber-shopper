@@ -1,16 +1,20 @@
 "use client"
-import React, { FormEvent, useRef } from 'react'
+import React, { FormEvent, useRef, useState } from 'react'
 
 const BarberAcountForm = () => {
+  const [formIsValid, setFormIsValid] = useState(false)
+  const [inputTouched, setInputTouched] =useState(false)
   const fullnameInputRef = useRef<HTMLInputElement>(null);
   const emailInputRef = useRef<HTMLInputElement>(null);
   const usernameInputRef = useRef<HTMLInputElement>(null);
   const yearsOfExpInputRef = useRef<HTMLInputElement>(null);
   const townInputRef = useRef<HTMLInputElement>(null);
 
+  const formIsInvalid = !formIsValid && inputTouched 
 
   const formSubmissionHandler = (event: FormEvent) => {
     event.preventDefault()
+    setInputTouched(true)
     const barberInfos = {
       fullname:fullnameInputRef.current?.value,
       email:emailInputRef.current?.value,
@@ -19,9 +23,27 @@ const BarberAcountForm = () => {
       town:townInputRef.current?.value,
     }
     
+    if(barberInfos.fullname?.trim() == '' || undefined) {
+      return formIsInvalid
+    }
+    if(barberInfos.email?.trim() == '' || undefined) {
+      return formIsInvalid
+    }
+    if(barberInfos.username?.trim() == '' || undefined) {
+      return formIsInvalid
+    }
+    if(barberInfos.yearsOfExp?.trim() == '' || undefined) {
+      return formIsInvalid
+    }
+    if(barberInfos.town?.trim() == '' || undefined) {
+      return formIsInvalid
+    }
+    setFormIsValid(true)
+    console.log(barberInfos);
   }
   return (
     <div>
+      { formIsInvalid && <p className='text-red-600'>please fill the form correctly</p>}
       <form onSubmit={formSubmissionHandler}>
         <div className='my-3'>
           <label htmlFor="full-name">Full name:</label>
