@@ -8,7 +8,7 @@ import Backdrop from '@/ui/Backdrop'
 const Navbar = () => {
   const links = [
     {name: "Explore", link:"/explore"},
-    {name: "Create Barber Profile", link:"/"},
+    {name: "Create Barber Profile", link:"/create-barber-profile"},
     {name: "Sign in", link:"/"},
   ]
 
